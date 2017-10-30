@@ -7,6 +7,7 @@ int  main( int argc, char** argv )
   if (fd < 0){
 
   	printf("Cant open serial. :(");
+  	return -1;
 
   }
 
