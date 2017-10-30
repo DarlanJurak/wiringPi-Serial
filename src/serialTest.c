@@ -4,11 +4,14 @@
 main ()
 {
   int fd = serialOpen ("/dev/ttyUSB0", 115200) ;
-  if (fd < 0)
-    ... error - your code here
+  if (fd < 0){
 
-  serialPutchar (128) ;
-  serialPutchar (142) ;
-  serialPutchar (0) ;
+  	fprintf("Cant open serial. :(");
+
+  }
+
+  serialPutchar (fd, 128);
+  serialPutchar (fd, 142);
+  serialPutchar (fd, 0);
 // and so on
 }
