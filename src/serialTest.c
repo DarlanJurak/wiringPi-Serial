@@ -6,7 +6,7 @@ main ()
   int fd = serialOpen ("/dev/ttyUSB0", 115200) ;
   if (fd < 0){
 
-  	fprintf("Cant open serial. :(");
+  	printf("Cant open serial. :(");
 
   }
 
