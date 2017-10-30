@@ -11,7 +11,7 @@ int  main( int argc, char** argv )
 
   }
 
-  // serialPutchar (fd, 128);
+  serialPutchar (fd, 128);
   // serialPutchar (fd, 142);
   // serialPutchar (fd, 0);
   while(1){
