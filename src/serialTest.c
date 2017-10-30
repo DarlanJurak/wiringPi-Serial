@@ -15,7 +15,7 @@ int  main( int argc, char** argv )
   // serialPutchar (fd, 0);
   while(1){
 
-  	printf(serialGetchar(fd));
+  	printf("%i", serialGetchar(fd));
 
   }
 
