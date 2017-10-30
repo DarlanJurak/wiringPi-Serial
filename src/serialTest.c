@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <wiringSerial.h>
 
-int main ()
+int  main( int argc, char** argv )
 {
-  int fd = serialOpen ("/dev/ttyUSB0", 115200) ;
+  int fd = serialOpen (argv[1], 9600);
   if (fd < 0){
 
   	printf("Cant open serial. :(");
