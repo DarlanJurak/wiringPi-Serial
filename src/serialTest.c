@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <wiringSerial.h>
 
-main ()
+int main ()
 {
   int fd = serialOpen ("/dev/ttyUSB0", 115200) ;
   if (fd < 0){
@@ -10,8 +10,15 @@ main ()
 
   }
 
-  serialPutchar (fd, 128);
-  serialPutchar (fd, 142);
-  serialPutchar (fd, 0);
+  // serialPutchar (fd, 128);
+  // serialPutchar (fd, 142);
+  // serialPutchar (fd, 0);
+  while(1){
+
+  	printf(serialGetchar(fd));
+
+  }
+
+  return 0;
 // and so on
 }
