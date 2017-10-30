@@ -11,14 +11,19 @@ int  main( int argc, char** argv )
 
   }
 
-  serialPutchar (fd, 128);
-  // serialPutchar (fd, 142);
-  // serialPutchar (fd, 0);
-  while(1){
+  while(serialGetchar(fd) != 50){
 
-  	printf("%i", serialGetchar(fd));
+    serialPutchar(fd, 128);
 
   }
+
+  // serialPutchar (fd, 142);
+  // serialPutchar (fd, 0);
+  // while(1){
+
+  // 	printf("%i", serialGetchar(fd));
+
+  // }
 
   return 0;
 // and so on
