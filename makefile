@@ -1,1 +1,1 @@
-all: gcc serialTest.c -o serialTest -lwiringPi
+all: gcc src/serialTest.c -o ./bin/serialTest -lwiringPi
