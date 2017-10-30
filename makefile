@@ -1,0 +1,1 @@
+all: gcc serialTest.c -o serialTest -lwiringPi
